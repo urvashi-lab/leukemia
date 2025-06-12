@@ -1,0 +1,169 @@
+<% layout('layouts/boilerplate') %>
+<% page = 'other'; %>
+
+<style>
+    body {
+        background-color: #d4edda; /* Hospital Green */
+        color: #155724; /* Dark Green Text */
+    }
+    .card {
+        background: #f8f9fa; /* Light Background */
+        border-left: 5px solid #28a745; /* Green Left Border */
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+        color: #155724;
+    }
+    .list-group-item {
+        background: transparent;
+        border: none;
+    }
+    .accordion-button {
+        background-color: #28a745;
+        color: white;
+    }
+    .accordion-button:hover {
+        background-color: #218838;
+    }
+    .btn-custom {
+        background-color: #218838;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+</style>
+
+<div class="mt-5">
+<div class="container p-4 my-4">
+<h1 class="text-center fw-bold">Leukemia: A Complete Overview</h1>
+<p class="text-center text-muted">Understanding leukemia, its types, symptoms, and treatment options.</p>
+
+<!-- Introduction Section -->
+<div class="card p-4 my-4">
+    <h2><i class="bi bi-book"></i> What is Leukemia?</h2>
+    <p>Leukemia is a type of blood cancer that originates in the bone marrow, affecting white blood cells. It disrupts normal blood production and weakens the immune system.</p>
+</div>
+
+
+<!-- Types of Leukemia -->
+<div class="card p-4 my-4">
+    <h2><i class="bi bi-list-ul"></i> Types of Leukemia</h2>
+    <ul class="list-group">
+        <li class="list-group-item"><b>Acute Lymphoblastic Leukemia (ALL)</b> - Common in children, rapid progression.</li>
+        <li class="list-group-item"><b>Acute Myeloid Leukemia (AML)</b> - Affects older adults, fast-growing.</li>
+        <li class="list-group-item"><b>Chronic Lymphocytic Leukemia (CLL)</b> - Slow-growing, common in elderly.</li>
+        <li class="list-group-item"><b>Chronic Myeloid Leukemia (CML)</b> - Linked to genetic mutations, progresses over time.</li>
+    </ul>
+</div>
+
+<!-- Symptoms -->
+<div class="card p-4 my-4">
+    <h2><i class="bi bi-exclamation-triangle"></i> Symptoms</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item">Fatigue and weakness</li>
+                <li class="list-group-item">Unexplained weight loss</li>
+                <li class="list-group-item">Frequent infections</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item">Easy bruising or bleeding</li>
+                <li class="list-group-item">Swollen lymph nodes, fever, night sweats</li>
+                <li class="list-group-item">Bone pain or tenderness</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!-- Preventive Measures -->
+    <div class="card p-4 my-4">
+        <h2><i class="bi bi-shield-check"></i> Preventive Measures</h2>
+        <p>While leukemia cannot always be prevented, certain lifestyle changes can help reduce the risk.</p>
+        <ul class="list-group">
+            <li class="list-group-item"><b>Avoid Smoking:</b> Tobacco smoke contains harmful chemicals linked to leukemia.</li>
+            <li class="list-group-item"><b>Limit Exposure to Radiation & Chemicals:</b> Reduce exposure to benzene and pesticides.</li>
+            <li class="list-group-item"><b>Healthy Diet:</b> Eat a balanced diet rich in fruits, vegetables, and whole grains.</li>
+            <li class="list-group-item"><b>Regular Exercise:</b> Staying active boosts overall health and immune function.</li>
+            <li class="list-group-item"><b>Manage Stress:</b> Chronic stress can weaken immunity; practice relaxation techniques.</li>
+            <li class="list-group-item"><b>Routine Health Checkups:</b> Early detection can improve outcomes if leukemia develops.</li>
+        </ul>
+    </div>
+
+
+<!-- Diagnosis -->
+<div class="card p-4 my-4">
+    <h2><i class="bi bi-clipboard-check"></i> Diagnosis</h2>
+    <ul class="list-group">
+        <li class="list-group-item"><b>Blood Tests:</b> Detects abnormal white blood cells.</li>
+        <li class="list-group-item"><b>Bone Marrow Biopsy:</b> Examines bone marrow samples.</li>
+        <li class="list-group-item"><b>Genetic Testing:</b> Identifies mutations related to leukemia.</li>
+    </ul>
+</div>
+
+<!-- Treatment Options -->
+<div class="card p-4 my-4">
+    <h2><i class="bi bi-capsule"></i> Treatment Options</h2>
+    <ul class="list-group">
+        <li class="list-group-item"><b>Chemotherapy:</b> Drugs to kill cancer cells.</li>
+        <li class="list-group-item"><b>Radiation Therapy:</b> High-energy rays to target leukemia cells.</li>
+        <li class="list-group-item"><b>Bone Marrow Transplant:</b> Replaces diseased bone marrow with healthy cells.</li>
+        <li class="list-group-item"><b>Targeted Therapy & Immunotherapy:</b> Attacks leukemia cells while preserving normal cells.</li>
+    </ul>
+</div>
+
+<!-- FAQs -->
+<div class="card p-4 my-4">
+    <h2><i class="bi bi-question-circle"></i> FAQs</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Can leukemia be cured?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Some types, like childhood ALL, have high cure rates. Others can be managed with long-term treatment.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Is leukemia always hereditary?
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    No, while genetics play a role, most cases are not inherited.
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Does early detection improve outcomes?
+                </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Yes! Early diagnosis and treatment significantly improve survival rates.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center my-4">
+    <a href="/" class="btn btn-custom">Back to Home</a>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,77 @@
+<% layout('layouts/boilerplate') %>
+<!-- Preloader -->
+<% page = 'login'; %> 
+
+<style>
+    body, html {
+    height: 100%;
+    margin: 0;
+}
+    .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    }
+
+    .container{
+    background-color: #d4edda;
+    
+}
+
+.login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+    .login-container h2 {
+        color: #155724;
+    }
+    .btn-custom {
+        background-color: #218838;
+        color: white;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .btn-custom:hover {
+        background-color: #1e7e34;
+    }
+    .form-control:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    }
+    .text-muted a {
+        color: #218838;
+        text-decoration: none;
+    }
+    .text-muted a:hover {
+        text-decoration: underline;
+    }
+</style>
+<div class="content">
+
+    <div class="container">
+<div class="login-container">
+<h2 class="text-center mb-4 ">Login to Blood Nova</h2>
+
+<form action="/login" method="POST">
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="username" class="form-control" id="username" name="username" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+
+    <button type="submit" class="btn btn-custom">Login</button>
+
+    <p class="text-center text-muted mt-3">Don't have an account? <a href="/signup">Sign up</a></p>
+</form>
+</div>
+</div>
+</div>

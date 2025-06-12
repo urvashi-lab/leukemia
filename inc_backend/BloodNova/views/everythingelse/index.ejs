@@ -1,0 +1,139 @@
+<% layout('layouts/boilerplate') %>
+<!-- Preloader -->
+<% page = 'home'; %> 
+    <div class="content mt-6">
+
+<section class="container-fluid bg-gradient p-5">
+    <div class="container d-flex align-items-center justify-content-between">
+        <!-- Left: Text Content -->
+        <div class="col-md-6">
+            <h1 class="display-3 fw-bold text-dark">Detect Leukemia<br> Early with AI</h1>
+            <p class="fs-5 text-muted">Blood Nova uses advanced AI to analyze scans and provide instant preliminary results.</p>
+            
+            <div class="d-flex mt-4">
+                <a href="/upload" class="btn btn-primary btn-lg me-3">Start Detection</a>
+                <a href="/about" class="btn btn-outline-dark btn-lg">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Right: Illustration -->
+        <div class="col-md-5 text-center">
+            <img src="/images/all.jpg" class="img-fluid" alt="AI Blood Test">
+        </div>
+    </div>
+</section>
+
+ <section class="container text-center my-5">
+    <h2 class="fw-bold mb-4" id="about-us">Why Choose Blood Nova?</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <p class="lead mb-5">
+                Blood Nova is an AI-powered tool designed to assist doctors in the early detection of leukemia.
+                Our advanced system enhances accuracy and accelerates clinical decision-making.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm p-4">
+                <h4 class="fw-bold">🔬 AI-Driven Insights</h4>
+                <p>
+                    Blood Nova leverages cutting-edge AI to analyze symptoms and detect patterns associated with leukemia.
+                    By processing medical data efficiently, it provides quick, data-backed insights to aid in diagnosis.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm p-4">
+                <h4 class="fw-bold">⚡ Fast & Accurate</h4>
+                <p>
+                    Unlike traditional diagnostic methods, Blood Nova offers instant analysis based on uploaded reports or symptoms.
+                    This ensures healthcare professionals can make informed decisions faster.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm p-4">
+                <h4 class="fw-bold">💡 Easy to Use</h4>
+                <p>
+                    Designed with simplicity in mind, Blood Nova offers a user-friendly interface that allows doctors to upload medical data
+                    and receive results with minimal effort. No complex installations or learning curves!
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm p-4">
+                <h4 class="fw-bold">🔒 Free & Secure</h4>
+                <p>
+                    We prioritize data privacy and security to ensure that medical reports and patient information remain confidential.
+                    Blood Nova is built with encrypted protocols to keep sensitive data safe while providing free access to leukemia detection.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="card border-0 shadow-sm p-4">
+                <h4 class="fw-bold">🏥 Bridging the Gap in Early Diagnosis</h4>
+                <p>
+                    Early detection of leukemia can significantly improve survival rates.
+                    Blood Nova bridges the gap between delayed diagnosis and timely treatment by supporting early-stage identification.
+                </p>
+            </div>
+        </div>
+    </div>
+</section> 
+<% if (page === "home") { %>
+    <!-- <script>
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                let letters = document.querySelectorAll(".preloader-text span");
+                let lastLetterIndex = letters.length - 1;
+    
+                // Animate letters disappearing upwards one by one
+                letters.forEach((letter, index) => {
+                    setTimeout(() => {
+                        letter.style.transform = "translateY(-50px)"; // Move up
+                        letter.style.opacity = "0"; // Fade out
+                    }, index * 300); // Normal speed (each letter disappears every 300ms)
+                });
+    
+                // Start fading in main content only after the last letter disappears
+                setTimeout(() => {
+                    let mainContent = document.getElementById("main-content");
+                    mainContent.style.visibility = "visible"; // Make content visible
+                    
+                    // Smoothly fade in content
+                    setTimeout(() => {
+                        mainContent.style.opacity = "1";
+                        mainContent.style.transform = "translateY(0)";
+                    }, 10); // Small delay for a natural transition
+    
+                    // Hide preloader completely
+                    document.getElementById("preloader").style.display = "none";
+                }, 1000 + (letters.length * 300)); // Adjust timing to match animation
+            }, 1000); // "Blood Nova" stays for 2 seconds
+        });
+    </script> -->
+<% } %>
+
+
+
+
+
+
+</div>
+
+    
+
+
+
+
+
+
+

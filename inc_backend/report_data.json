@@ -1,0 +1,22 @@
+{
+  "doctor": {
+    "name": "manya",
+    "specialty": "General Practitioner",
+    "phone": "0781470970",
+    "hospital": "Deenanath Mangeshkar Hospital"
+  },
+  "patient": {
+    "name": "humayu",
+    "id": "PAT-2c1ac1a8-ca1f-46eb-895d-c2a97193168b",
+    "age": 56,
+    "gender": "Male",
+    "bloodGroup": "A+",
+    "phone": "444444",
+    "referringPhysician": "Dr. Sanjeev Joshi"
+  },
+  "prediction": "ProB",
+  "confidence": 1,
+  "grad_cam": "http://127.0.0.1:5000/static/grad_cam.png",
+  "abnormal_regions": "http://127.0.0.1:5000/static/abnormal_regions.png",
+  "grad_cam_colored": "http://127.0.0.1:5000/static/grad_cam_colored.png"
+}

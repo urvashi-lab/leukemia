@@ -1,0 +1,59 @@
+<% layout('layouts/boilerplate') %>
+<!-- Preloader -->
+<% page = 'signup'; %>
+<style>
+    body {
+        background-color: #d6f5d6;
+    }
+
+    .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    }
+
+    .signup-container {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 5%;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+</style>
+
+<div class="content">
+
+<div class="container">
+    <div class="signup-container">
+        <h3 class="text-center text-success">Sign Up for Blood Nova</h3>
+        <form action="/signup" method="POST">
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control"name="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="text" class="form-control"name="phoneNumber" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">UserName</label>
+                <input type="text" class="form-control" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Sign Up</button>
+        </form>
+        <p class="text-center mt-3">Already have an account? <a href="/login">Log in</a></p>
+    </div>
+</div>
+</div>
