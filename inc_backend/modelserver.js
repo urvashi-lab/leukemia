@@ -16,7 +16,7 @@ const cors = require('cors');
 const app = express();
 app.use(express.json());
 app.use(cors());
-mongoose.connect('mongodb+srv://shrutilap:Shruti123@cluster0.1ogwo.mongodb.net/BloodNova?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongokey', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     serverSelectionTimeoutMS: 15000, // Increase timeout
@@ -31,7 +31,7 @@ mongoose.connect('mongodb+srv://shrutilap:Shruti123@cluster0.1ogwo.mongodb.net/B
 
   const { MongoClient, ObjectId } = require('mongodb');
   async function findPatient(patientId) {
-    const uri = "mongodb+srv://shrutilap:Shruti123@cluster0.1ogwo.mongodb.net/BloodNova?retryWrites=true&w=majority&appName=Cluster0";
+    const uri = "mongokey";
     const client = new MongoClient(uri);
     
     try {
@@ -52,7 +52,7 @@ mongoose.connect('mongodb+srv://shrutilap:Shruti123@cluster0.1ogwo.mongodb.net/B
   
 
   async function findDoctor(patientId) {
-    const uri = "mongodb+srv://shrutilap:Shruti123@cluster0.1ogwo.mongodb.net/BloodNova?retryWrites=true&w=majority&appName=Cluster0";
+    const uri = "mongokey";
     const client = new MongoClient(uri);
 
     try {
@@ -325,26 +325,7 @@ app.post("/generate-report", async (req, res) => {
 
 
 
-// In your route handler
-// app.post('/process', async (req, res) => {
-//   try {
-//     console.log("Request received at /process with body:", req.body);
-//     const { patientId } = req.body;
-//     const patient = await findPatient(patientId);
-    
-//     if (!patient) {
-//       return res.status(404).json({ error: 'Patient not found' });
-//     }
-    
-//     res.json({ success: true, patient });
-//     console.log(patient);
-//   } catch (error) {
-//     console.error('Error:', error);
-//     res.status(500).json({ error: error.message });
-//   }
-// });
 
-// Start Express server
 app.listen(8000, () => console.log("Express server running on port 8000"));
 
 
