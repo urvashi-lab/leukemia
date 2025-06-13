@@ -10,7 +10,7 @@ html,body{
   
   /* Change primary button color */
 .btn-primary {
-    background-color: #4CAF50 !important;  /* ✅ Hospital Green */
+    background-color: #4CAF50 !important;  
     border-color: #4CAF50 !important;
 }
 
@@ -24,9 +24,6 @@ html,body{
     background-color: #4CAF50 !important;
     color: white !important;
 }
-
-
- 
   
   .navbar{
       height:5rem;
@@ -96,47 +93,13 @@ html,body{
 
 
 
-/* Preloader Styles */
-/* Make sure the preloader is centered */
-/* #preloader {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10000;
-} */
 
-/* Preloader text styling */
- /* .preloader-text {
-    font-size: 10rem;
-    font-weight: bold;
-    color: #28a745;
-    display: flex;
-    gap: 10px;
-} */ 
-
-/* Letter animation */
- /* .preloader-text span {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}   */
 
 .icon{
 font-size: 1.5rem;
 color: black;
 margin-right: 1rem;
 }
-
-/* Main Content - Initially Hidden */
- /* #main-content {
-    opacity: 0;
-    transform: translateY(20px); /* Slightly translate down initially */
-    /* visibility: hidden; 
-     transition: opacity 0.5s ease, transform 0.5s ease;  */ 
-
 
 #main-content.visible {
    
