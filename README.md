@@ -56,6 +56,7 @@ Limited Dataset Availability : Only B-ALL cases were available, limiting general
 Integration Complexity : Seamless communication between frontend, backend, and AI model server required careful orchestration.
 Security & Privacy Compliance : Ensuring patient data protection as per medical standards.
 Scalability : Supporting multiple users and future expansions.
+
 🚀 Future Scope
 Expand dataset to include more leukemia subtypes.
 Integrate with Electronic Health Record (EHR) systems.
@@ -63,6 +64,7 @@ Enable real-time cloud-based analysis .
 Develop mobile and web applications for broader accessibility.
 Extend detection capabilities to other blood-related diseases .
 Pursue clinical validation for hospital deployment.
+
 ✅ Conclusion
 BloodNova offers a fast, efficient, and reliable tool to assist doctors in detecting B-ALL leukemia. By automating diagnosis and report generation, it significantly reduces the burden on medical professionals and improves early intervention, ultimately enhancing patient outcomes.
 
