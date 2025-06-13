@@ -227,22 +227,6 @@ app.post('/upload', upload.single('file'), async (req, res, next) => {
         await axios.post('http://localhost:8000/generate-report', { patientId: savedreport.patientId });
         console.log("Sent request to model server with patientId:", savedreport._id);
 
-        // const pdfUrl = `${req.protocol}://${req.get('host')}/patient-report/${savedreport.patientId}`;
-        
-        // // Calculate estimated completion time (30 seconds from now)
-        // const bufferTimeInSeconds = 30;
-        // const estimatedCompletionTime = new Date(Date.now() + bufferTimeInSeconds * 1000);
-        
-        // res.status(200).json({ 
-        //     message: 'Image uploaded & sent for processing', 
-        //     patientId: savedreport.patientId,
-        //     pdfUrl: pdfUrl,
-        //     status: 'processing',
-        //     estimatedCompletionTime: estimatedCompletionTime,
-        //     bufferTimeInSeconds: bufferTimeInSeconds
-        // });
-
-        // res.status(200).json({ message: 'Image uploaded & sent for processing', patientId: savedreport._id });
         console.log("⏳ Waiting for the report to be saved in the database...");
         let pdfReport = null;
 
