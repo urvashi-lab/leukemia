@@ -1,12 +1,5 @@
 
 
-// mongoose.connect('mongodb://localhost:27017/blood_nova', {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-// })
-// .then(() => console.log("MongoDB Connected"))
-// .catch(err => console.error("MongoDB Connection Error:", err));
-
 const mongoose = require("mongoose");
 
 const reportSchema = new mongoose.Schema({
