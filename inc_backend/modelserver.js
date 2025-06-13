@@ -291,10 +291,6 @@ app.post("/generate-report", async (req, res) => {
                     console.error("Failed to delete temporary file:", unlinkError);
                 }
             }
-            
-            // res.json({ message: "Report generated successfully", file: "ALL_Detection_Report.pdf" });
-            
-            // savePdfToDatabase(patientId, "ALL_Detection_Report.pdf");
             try {
                 // Save PDF to database - now properly awaited
                 const saveResult = await savePdfToDatabase(patientId, "ALL_Detection_Report.pdf");
