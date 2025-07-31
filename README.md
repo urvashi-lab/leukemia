@@ -63,8 +63,16 @@ Integrate with Electronic Health Record (EHR) systems.
 Enable real-time cloud-based analysis .
 Develop mobile and web applications for broader accessibility.
 Extend detection capabilities to other blood-related diseases .
-Pursue clinical validation for hospital deployment.
+
+
 
 ✅ Conclusion
 BloodNova offers a fast, efficient, and reliable tool to assist doctors in detecting B-ALL leukemia. By automating diagnosis and report generation, it significantly reduces the burden on medical professionals and improves early intervention, ultimately enhancing patient outcomes.
+
+✍️ Authors
+
+- [@urvashi-lab](https://github.com/urvashi-lab) (Urvashi Patil)
+- [@manyaababbar](https://github.com/manyaababbar) (Manya Babbar)
+- [@shrutilapalkar](https://github.com/shrutilap) (Shruti Lapalkar)
+Pursue clinical validation for hospital deployment.
 
